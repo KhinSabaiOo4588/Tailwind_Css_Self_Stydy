@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Flex & justify-content & items -->
+    <div class="flex justify-around items-center w-full h-72 bg-slate-200 m-2">
+        <div class="bg-pink-300 border p-10">1</div>
+        <div class="bg-pink-300 border p-10">2</div>
+        <div class="bg-pink-300 border p-10">3</div>
+    </div>
+
+    <!-- Gap & Order-->
+    <div class="flex flex-wrap gap-4 justify-around items-center w-full h-72 bg-slate-200 m-2">
+        <div class="bg-pink-300 border p-10">1</div>
+        <div class="bg-pink-300 border p-10">2</div>
+        <div class="bg-pink-300 border p-10">3</div>
+        <div class="bg-pink-300 border p-10 order-6">4</div>
+        <div class="bg-pink-300 border p-10">5</div>
+        <div class="bg-pink-300 border p-10">6</div>
+        <div class="bg-pink-300 border p-10">7</div>
+        <div class="bg-pink-300 border p-10">8</div>
+        <div class="bg-pink-300 border p-10">9</div>
+    </div>
+
+    <!-- Grow & Shrink -->
+    <div class="flex w-full h-72 bg-slate-200 m-2">
+        <div class="flex-intial bg-pink-300 border p-10">1</div>
+        <div class="flex-none bg-pink-300 border p-10">2</div>
+        <div class="flex-1 bg-pink-300 border p-10">3</div>
+    </div>
+</body>
+</html>

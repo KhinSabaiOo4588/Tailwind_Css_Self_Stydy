@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ADD8E6] sm:bg-[#FF7F50] md:bg-[#E6E6FA] lg:bg-[#E6E6FA] xl:bg-[#FFA07A] 2xl:bg-red">
+    <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"></h1>
+
+    <script>
+        const screenWidth = () => {
+            const width = window.innerWidth
+            const height = window.innerHeight
+
+            document.querySelector('h1').innerHTML = `Width ${width} * Height ${height}`;
+        }
+        window.onload = screenWidth;
+        window.onresize = screenWidth;
+    </script>
+</body>
+</html>

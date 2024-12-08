@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                'sans': ['ui-sans-serif', 'system-ui',],
+                'serif': ['ui-serif', 'Georgia',],
+                'mono': ["Bungee Spice", 'sans-serif' ],
+                'display': ['Oswald', ],
+                'body': ['"Open Sans"', ],
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Font family and font size -->
+    <div class="font-sans">Hello</div>
+    <div class="font-serif">Hello</div>
+    <div class="text-xs font-mono">Hello</div>
+    <div class="text-sm font-mono">Hello</div>
+    <div class="text-lg font-mono">Hello</div>
+    <div class="text-xl font-mono">Hello</div>
+    <div class="text-2xl font-mono">Hello</div>
+    <div class="text-3xl font-mono">Hello</div>
+    <div class="text-4xl font-mono">Hello</div>
+
+    <!-- Font weight -->
+     <div class="font-thin">Hello World</div>
+     <div class="font-normal">Hello World</div>
+     <div class="font-medium">Hello World</div>
+     <div class="font-semibold">Hello World</div>
+     <div class="font-bold">Hello World</div>
+
+     <!-- Letter Spacing -->
+     <div class="tracking-tigher">Hello World</div>
+     <div class="tracking-widest">Hello World</div>
+     
+     <!-- Text align -->
+     <div class="text-right">Hello World</div>
+     <div class="text-left">Hello World</div>
+     <div class="text-center">Hello World</div>
+
+     <!-- Text decoration-->
+     <div class="underline">Hello World</div>
+     <div class="line-through">Hello World</div>
+     <div class="overline">Hello World</div>
+
+     <!-- Text decoration color -->
+     <div class="underline decoration-red-500">Hello World</div>
+     <div class="line-through decoration-red-500">Hello World</div>
+     <div class="overline decoration-red-500">Hello World</div>
+
+     <!-- Text decoration style -->
+     <div class="overline decoration-solid">Hello World</div>
+     <div class="overline decoration-double">Hello World</div>
+     <div class="overline decoration-dashed">Hello World</div>
+     <div class="overline decoration-wavy">Hello World</div>
+
+     <!-- Text Transform -->
+     <div class="lowercase">Hello World</div>
+     <div class="uppercase">Hello World</div>
+     <div class="capitalize">hello world</div>
+     <div class="normal-case">Hello World</div>
+</body>
+</html>

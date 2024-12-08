@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .toast {
+            width: 400px;
+            background-color: #7d8b9a;
+            margin: auto;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .ret {
+            width: 10px;
+            height: 10px;
+            background-color: #dc2626;
+        }
+        .ret-text {
+            display: flex;
+            align-items: center;
+        }
+        .toastBody {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- html/css pure -->
+    <!-- <div class="toast">
+        <div class="toastBody">
+            <div class="ret-text">
+                <div class="ret"></div>
+                <h2>Toast</h2>
+            </div>
+            <span>11 min ago</span>
+        </div>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit aut, ea in sint qui id earum corporis pariatur tenetur minus doloribus, adipisci architecto. Sed temporibus ipsa ut molestiae maiores
+        </p>
+    </div> -->
+
+    <!-- tailwind css -->
+    <div class="w-80 bg-slate-300 p-2">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-4 h-4 rounded-md bg-red-300"></div>
+                <h2 class="text-2xl ml-2 font-bold">Toast</h2>
+            </div>
+            <span>11 min ago</span>
+        </div>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nesciunt voluptatum sed quidem quae magnam nihil, tempore consectetur molestias, molestiae est a quo quis voluptatem, commodi eveniet. Autem, quidem veritatis?
+        </p>
+    </div>
+</body>
+</html>

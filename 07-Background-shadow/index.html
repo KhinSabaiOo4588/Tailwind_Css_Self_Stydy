@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Shadow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                'sans': ["Bungee Spice", 'sans-serif'],
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="m-2 text-xl underline decoration-wavy decoration-orange-300 underline-offset-4">This is background examples</h1>
+    <div class="m-2 h-48 w-48 bg-cover bg-center" style="background-image: url(/image/image1\ \(2\).jpg);"></div>
+
+    <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+    <div class="h-14 bg-gradient-to-r from-sky-500 to-indigo-500"></div>
+    <div class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+    <div class="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+    <div class="h-14 bg-gradient-to-l from-blue-300 to-blue-500"></div>
+
+    <!--Shadow -->
+    <h1 class="m-2 text-xl underline decoration-wavy decoration-orange-300 underline-offset-4">Shadow</h1>
+    <div class="w-[500px] border border-4 m-auto p-3 shadow mb-4">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem. Cum numquam exercitationem ex inventore sit animi corrupti vitae esse? Maxime accusantium numquam ullam a iure sed, iste nostrum totam!
+        </p>
+    </div>
+
+    <div class="w-[500px] border border-4 m-auto p-3 shadow-sm mb-4">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem. Cum numquam exercitationem ex inventore sit animi corrupti vitae esse? Maxime accusantium numquam ullam a iure sed, iste nostrum totam!
+        </p>
+    </div>
+
+    <div class="w-[500px] border m-auto p-3 shadow-xl mb-4">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem. Cum numquam exercitationem ex inventore sit animi corrupti vitae esse? Maxime accusantium numquam ullam a iure sed, iste nostrum totam!
+        </p>
+    </div>
+
+    <div class="w-[500px] border m-auto p-3 shadow-2xl shadow-rose-200 mb-4">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem. Cum numquam exercitationem ex inventore sit animi corrupti vitae esse? Maxime accusantium numquam ullam a iure sed, iste nostrum totam!
+        </p>
+    </div>
+
+    <div class="w-[500px] border m-auto p-3 shadow-2xl shadow-cyan-300 shadow-inner mb-4">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem. Cum numquam exercitationem ex inventore sit animi corrupti vitae esse? Maxime accusantium numquam ullam a iure sed, iste nostrum totam!
+        </p>
+    </div>
+
+    <div class="flex -space-x-24">
+        <div class="w-72 h-72 bg-rose-300 mix-blend-multiply rounded-full"></div>
+        <div class="w-72 h-72 bg-blue-300 mix-blend-multiply rounded-full"></div>
+    </div>
+
+</body>
+</html>
